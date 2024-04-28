@@ -9,7 +9,7 @@ interface ArticleListProps {
 export default function ArticleList({ basePath, list }: ArticleListProps) {
   return (
     <ul className="list">
-      {list.map((item) => {
+      {list.articles?.map((item) => {
         return (
           <li className="listItem" key={item.id}>
             <Link href={`${basePath}/${item.id}`}>

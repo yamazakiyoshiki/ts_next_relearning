@@ -1,10 +1,11 @@
 export default interface ArticleListModel {
   articles: [
     {
-      id: string;
-      title: string;
-      text: string;
-      date: string;
+      id?: string;
+      title?: string;
+      text?: string;
+      date?: string;
+      msg?: string | null;
     }
   ];
 }
